@@ -8,7 +8,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://deneme3-ten.vercel.app/"],  # İzin verilen originleri belirtin
+    allow_origins=["*"],  # İzin verilen originleri belirtin
     allow_credentials=True,
     allow_methods=["*"],  # İzin verilen HTTP metotlarını belirtin
     allow_headers=["*"],  # İzin verilen başlıkları belirtin
